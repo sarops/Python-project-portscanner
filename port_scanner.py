@@ -11,7 +11,7 @@ def get_open_ports(target, port_range, verbose_mode=False):
 
             result = s.connect_ex((ip, port))
             if result == 0:
-                open_ports.appned(port)
+                open_ports.append(port)
             s.close()
     except KeyboardInterrupt:
         return("Exiting program!!!")
