@@ -29,7 +29,7 @@ def get_open_ports(target, port_range, verbose_mode=False):
     except socket.herror:
         host = None
     
-    final_string = " Open port for"
+    final_string = " Open ports for"
     if host != None:
         final_string += " {url} {ip}".format(url=host, ip=ip)
     else:
