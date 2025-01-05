@@ -1,6 +1,7 @@
-import unittest, port_scanner
+import unittest
+import port_scanner
 
-print("--Tests--")
+print("***Tests***")
 class UnitTests(unittest.TestCase):
     def test_port_scanner_ip(self):
         ports = port_scanner.get_open_ports("209.216.230.240", [440, 445], False)
