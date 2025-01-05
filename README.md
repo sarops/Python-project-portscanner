@@ -1,5 +1,7 @@
 # Python-project-portscanner
 
+## This assignment is part of the FreeCodeCamp Information Security Certificate projects: Information Security Projects (https://www.freecodecamp.org/learn/information-security/)
+
 ## Assignment:
 
 Create a port scanner using Python.
