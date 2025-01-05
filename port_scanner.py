@@ -35,15 +35,14 @@ def get_open_ports(target, port_range, verbose_mode=False):
     else:
         final_string += "\n"
         if verbose_mode:
-            header = "PORT    SERVICE\n"
+            header = "PORT     SERVICE\n"
             body = ""
             for port in open_ports:
-                body += "{p}".format(p=port) + " "*(9-len(str(port))) +  "{sn}".format(sn=socket.getservbyport(port))
+                body += "{p}".format(p=port) + " "*(9-len(str(port))) + "{sn}".format(sn=socket.getservbyport(port))
 
-        if(open_ports[len(open_ports)-1] !=port):
-            header += "\n"
-            body += "\n"
-        return final_string + header + body
+                if(open_ports[len(open_ports)-1] !=port):
+                    body += "\n"
+                return final_string + header + body
 
 
     return(open_ports)
